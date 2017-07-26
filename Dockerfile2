@@ -1,0 +1,9 @@
+#creating new webserver with centos
+FROM centos
+MAINTAINER pandiyanmaruthu6@gmail.com
+RUN yum update -y
+RUN yum install httpd -y
+RUN yum clean all
+EXPOSE 80 
+CMD ["apachectl","-DBACKGROUND"]
+CMD ["echo","Welcome TO Centos Webserver"]
