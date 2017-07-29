@@ -15,16 +15,13 @@
 			CMD ["echo","Monitoring Tool Ready!!!"]
 ```
 ###### Build Docker File
-> docker build -t Nagios_monitor:version1 .
-			```
-			-t − is to mention a tag to the image
-
-			ImageName − This is the name you want to give to your image.
-
-			TagName − This is the tag you want to give to your image.
-
-			Dir − The directory where the Docker File is present
-			```
+`docker build -t Nagios_monitor:version1 .`
+```
+-t − is to mention a tag to the image
+ImageName − This is the name you want to give to your image.
+TagName − This is the tag you want to give to your image.
+Dir − The directory where the Docker File is present
+```
 ###### View Docker Image
 > docker image
 ###### To check Nagios container
