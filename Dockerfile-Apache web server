@@ -1,8 +1,0 @@
-#This is a sample Image 
-FROM centos 
-MAINTAINER pandiyanmaruthu6@gmail.com 
-
-RUN yum update -y 
-RUN yum install -y httpd
-RUN service httpd start
-CMD [“echo”,”Image created”] 
