@@ -1,0 +1,10 @@
+#Nagios Monitoring Tool
+FROM guyton/centos6
+MAINTAINER pandiyanmaruthu6@gmail.com
+RUN yum update -y
+RUN yum install gd gd-devel gcc glibc glibc-common -y
+RUN yum install wget -y 
+RUN yum install epel-release* -y
+RUN yum install nagios* -y
+EXPOSE 80
+CMD ["echo","Monitoring Tool Ready!!!"]
