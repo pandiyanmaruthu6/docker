@@ -8,20 +8,20 @@
 ### Docker file name should be like this "Dockerfile"
 ---
 #### Create Docker File
-> touch Dockerfile
+`touch Dockerfile`
 ###### what kind of os we are going to use in our image
-> From centos 
+`From centos` 
 ###### whois maintainer and owner of the image
-> MAINTAINER pandiyanmaruthu6@gmail.com
+`MAINTAINER pandiyanmaruthu6@gmail.com`
 ###### In docker image files, Always we have to start with installing update's.
-> RUN yum update -y
+`RUN yum update -y`
 ###### We are removing all yum caches.
-> RUN yum clean all
+`RUN yum clean all`
 ###### I am installing apache for this docker image. So it  will act as docker with web-server
-> RUN yum install -y httpd
+`RUN yum install -y httpd`
 ###### In this Image webserver will run with 80 port in container
-> EXPOSE 80 
+`EXPOSE 80`
 ###### We are starting the Container and Apache Service In Background after Creating the Image
-> CMD ["apachectl","-DBACKGROUND"]
+`CMD ["apachectl","-DBACKGROUND"]`
 ###### at the end of file we did echo the succesful completion of our image.
-> CMD [“echo”,”Welcome TO Centos Webserver”] 
+`CMD [“echo”,”Welcome TO Centos Webserver”]` 
